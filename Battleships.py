@@ -17,7 +17,7 @@ def spdtyping(string,speed):
     print
 
 def board():
-    spdtyping("  |A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|",0.000001)
+    spdtyping("  |A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|x",0.000001)
     x = 0
     while x !=26:
         x = x + 1
@@ -26,7 +26,11 @@ def board():
             x = str(x) + " "
         spdtyping(str(x)+ "|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|",0.000001)
         x = y
+    spdtyping("y",0.000001)
 
+dicletter = 0
+while dicletter != 26:
+    dicletter = dicletter + 1
 typing("Welcom to Battleships\n\n")
 
 board()
